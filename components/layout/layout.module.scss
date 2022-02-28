@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  main {
+    flex-grow: 1;
+    // background-color: #282c34;
+    background-image: linear-gradient(135deg, #282c34, #43464b);
+    color: #fff;
+    padding: 0 2rem;
+    overflow: auto;
+  }
+}

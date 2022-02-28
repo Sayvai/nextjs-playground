@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  background-color: #111;
+  color: #aaa;
+  padding: 1rem 0.8rem;
+  border-top: 1px solid #aaa;
+  align-items: center;
+
+  small {
+    flex-grow: 1;
+  }
+
+  nav {
+    flex-shrink: 1;
+
+    a {
+      margin: 0 0 0 0.5rem;
+      opacity: 0.8;
+    }
+
+    a:hover {
+      opacity: 1;
+    }
+
+    a svg{
+      height: 1rem;
+    }
+  }
+}

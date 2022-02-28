@@ -1,0 +1,37 @@
+.news-aggregator-article {
+  small[data-type="back"] {
+    display: block;
+    margin-top: 0.6rem;
+
+    &::before {
+      content: "\276E";
+      margin-right: 0.6rem;
+    }
+  }
+
+  small[data-type="date"] {
+    display: block;
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    display: block;
+    width: 80%;
+  }
+
+  p {
+    color: #ccc;
+  }
+
+  span[data-type="full-article"] {
+    font-style: italic;
+    font-size: 0.9rem;
+
+    a::after {
+      content: "\29C9";
+      margin-left: 0.2rem;
+    }
+  }
+}

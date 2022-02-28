@@ -1,0 +1,45 @@
+.playground {
+  h3 {
+    margin-top: 2rem;
+  }
+
+  ul[data-type="top-picks"] {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 1rem;
+    padding: 0;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      background-color: #000;
+      border: 1px solid #666;
+      padding: 1rem;
+      color: #ccc;
+      transition: box-shadow .3s;
+
+      &:hover {
+        color: #eee;
+        border: 1px solid #89e4b9;
+        opacity: 0.8;;
+        box-shadow: 0 0 12px 4px rgba(80,256,200,.2);
+      }
+    }
+
+    h4 {
+      color: #bbb;
+      margin-top: 0;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: #ccc;
+    }
+
+    p {
+      color: #aaa;
+    }
+  }
+}

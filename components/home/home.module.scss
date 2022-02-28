@@ -1,0 +1,29 @@
+.home {
+  div[data-type="center-big"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    div {
+      align-self: center;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 4rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    button {
+      background-color: #017a53;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+}
