@@ -12,7 +12,9 @@ But with Next.js, it is considered a pretty much almost a full-stack framework. 
 
 ## Getting Started
 
-First, run the development server:
+⚠️ The local development server is overridden and configured run against the HTTPS protocol (default was HTTP). This is merely to simulate and be on parity with remotely deployed production environments. Please follow the external [instructions](https://dev.to/nakib/using-https-on-next-js-local-development-server-bcd) on first installing a local Certificate Authority (CA) on your system as a prerequisite.
+
+After following the above CA instructions, run the development server:
 
 ```bash
 npm run dev
@@ -20,7 +22,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://localhost:3000](https://localhost:3000) with your browser to see the result.
 
 ## Predominant Texh Stack And Environment
 - ReactJS `^17.0.2`
