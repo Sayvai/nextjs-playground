@@ -17,9 +17,9 @@ const Home: NextPage = ({ }: HomePageProps) => {
 
       <section className={styles.home}>
         <div data-type="center-big">
-          <p>An experimental playground of various features and capabilities, leveraging Next.JS and React 🧑🏻‍🔬</p>
+          <p data-testid="main text">An experimental playground of various features and capabilities, leveraging Next.JS and React 🧑🏻‍🔬</p>
           <Link href="/playground" passHref>
-            <button>View Playground</button>
+            <button data-testid="button - playground">View Playground</button>
           </Link>
         </div>
       </section>

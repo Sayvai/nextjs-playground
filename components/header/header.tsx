@@ -9,8 +9,8 @@ const Header = (): React.ReactElement => {
   return (
     <>
       <header className={styles.header}>
-        <Link href="/"><a><h1>Next.js Playground</h1></a></Link>
-        <nav>
+        <Link href="/"><a><h1 data-testid="main site heading">Next.js Playground</h1></a></Link>
+        <nav data-testid="navigation links">
           <div data-menu-item-type="more">
             <div data-menu-item-type="more-main-item">
               <Link href="/playground"><a className={pathname.includes('/playground') ? styles.active : ""}>Playground</a></Link>
