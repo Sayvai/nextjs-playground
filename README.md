@@ -14,7 +14,11 @@ But with Next.js, it is considered a pretty much almost a full-stack framework. 
 
 ⚠️ The local development server is overridden and configured run against the HTTPS protocol (default was HTTP). This is merely to simulate and be on parity with remotely deployed production environments. Please follow the external [instructions](https://dev.to/nakib/using-https-on-next-js-local-development-server-bcd) on first installing a local Certificate Authority (CA) on your system as a prerequisite.
 
-After following the above CA instructions, run the development server:
+After following the above CA instructions, install the project dependencies, and run the development server:
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev

@@ -4,12 +4,12 @@ import styles from './news-aggregator-article.module.scss';
 import { Article } from './news-aggregator-articles';
 
 export interface NewsAggregatorArticleProps {
-  article: Article;
+  article: Article | undefined;
 }
 
 const NewsAggregatorArticle: React.FC<NewsAggregatorArticleProps> = ({ article }) => {
   if (!article) {
-    return <p>Oops. There was problem retrieiving the article..</p>
+    return <p data-type="error-no-article">Oops. There was problem retrieiving the article..</p>
   }
 
   const publishedDate = new Date(article.publishedAt).toLocaleString();
@@ -21,11 +21,11 @@ const NewsAggregatorArticle: React.FC<NewsAggregatorArticleProps> = ({ article }
     <div className={styles['news-aggregator-article']}>
       <section>
         <small data-type="back"><Link href="/playground/news-aggregator"><a title="News Aggregator Articles">News Aggregator Articles</a></Link></small>
-        <h2>{article.title}</h2>
+        <h2 data-type="title">{article.title}</h2>
         <small data-type="date">{displayedDate}</small>
         <img src={article.imageUrl} alt={`Article image: ${article.title}`} />
         <h3>Summary</h3>
-        <p>{article.summary}.. <span data-type="full-article">(read the <a href={article.url} target="_blank" aria-label='Read full article' title='Read full article' rel="noopener noreferrer">full article</a>)</span></p>
+        <p data-type="summary-text">{article.summary}.. <span data-type="full-article">(read the <a href={article.url} target="_blank" aria-label='Read full article' title='Read full article' rel="noopener noreferrer">full article</a>)</span></p>
       </section>
     </div>
   );
