@@ -14,7 +14,11 @@ But with Next.js, it is considered a pretty much almost a full-stack framework. 
 
 ⚠️ The local development server is overridden and configured run against the HTTPS protocol (default was HTTP). This is merely to simulate and be on parity with remotely deployed production environments. Please follow the external [instructions](https://dev.to/nakib/using-https-on-next-js-local-development-server-bcd) on first installing a local Certificate Authority (CA) on your system as a prerequisite.
 
-After following the above CA instructions, run the development server:
+After following the above CA instructions, install the project dependencies, and run the development server:
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev
@@ -30,6 +34,14 @@ Open [https://localhost:3000](https://localhost:3000) with your browser to see t
 - SASS `^1.49.8`
 - Node `16.14.0`
 - NPM `8.3.1`
+
+## Tests: E2E and Component Tests [WIP] ⚠️
+
+There is currently work in place to integrate Cypress [Cypress](https://www.cypress.io/) to leverage E2E and Component Testing at version 10.
+
+You may view the current progress on the branch [cypress-integration](https://github.com/Sayvai/nextjs-playground/tree/cypress-integration).
+
+There is currently a small blocker preventing the Cypress integration work from being merged into the `main` branch, where you may read up on the GitHub issue ([#22525](https://github.com/cypress-io/cypress/issues/22525)) that i have raised with the Cypress team, for the full context.
 
 ## Browsers
 
